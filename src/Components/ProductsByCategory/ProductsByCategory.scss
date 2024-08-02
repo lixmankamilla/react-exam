@@ -1,0 +1,52 @@
+@import "../../themes/variables/index";
+
+.products-blocks-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  &__block {
+    width: 278px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    &__desc {
+      border: 1px solid #e8e9ea;
+      padding: 16px;
+      &__title {
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 16px;
+        color: $primary-text-color;
+        height: 72px;
+        margin-bottom: 12px;
+      }
+      &__price__block {
+        &__sum {
+          font-family: $primary-font;
+          font-weight: 700;
+          font-size: 20px;
+          margin-right: 3px;
+        }
+        &__currency {
+          font-family: $primary-font;
+          font-weight: 700;
+          font-size: 20px;
+        }
+        margin-bottom: 16px;
+      }
+      &__cart__btn {
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 12px 80px;
+        background-color: $primary-color;
+        border: none;
+      }
+    }
+  }
+}
+
+.products-by-cat-link {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,23 @@
+@import "../../themes/variables/index";
+
+.cart-slider-wrapper {
+  height: 232px;
+  margin-bottom: 40px;
+  padding: 40px 100px;
+  background-color: transparent;
+  background-image: url("../../assets/cart-slider-icon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__text-block {
+    &__bread-crumb {
+      font-family: $primary-font;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-family: $primary-font;
+      font-size: 48px;
+      font-weight: 700;
+    }
+  }
+}

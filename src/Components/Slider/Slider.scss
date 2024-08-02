@@ -1,0 +1,95 @@
+@import "../../themes/variables/index";
+
+.top-slider {
+  padding: 40px 0px;
+  .swiper-slide {
+    position: relative;
+  }
+  .slider-content {
+    position: absolute;
+    width: 580px;
+    top: 40px;
+    left: 100px;
+  }
+  .slider-title {
+    font-family: $primary-font;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #171b24;
+  }
+  .slider-desc {
+    font-family: $primary-font;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #454950;
+  }
+
+  .slider-btn {
+    font-family: $primary-font;
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    padding: 12px 24px;
+    background-color: #fcec41;
+    text-decoration: none;
+    color: #171b24;
+  }
+}
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  left: auto;
+  top: auto;
+  bottom: 80px;
+  opacity: 1;
+  background-color: #fff;
+  border: 1px solid #d1d1d3;
+}
+.swiper-button-next {
+  right: 140px;
+  &:after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url("../../assets/arrowBlack.svg") no-repeat;
+    transition: all 0.4 ease;
+    position: absolute;
+  }
+  &:hover,
+  &:active {
+    background-color: #2f323a;
+
+    &::after {
+      background: url("../../assets/arrowWhite.svg") no-repeat;
+    }
+  }
+}
+.swiper-button-prev {
+  right: 204px;
+  &:after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url("../../assets/arrowBlack.svg") no-repeat;
+    transform: rotate(180deg);
+
+    position: absolute;
+  }
+  &:hover,
+  &:active {
+    background-color: #2f323a;
+
+    &::after {
+      background: url("../../assets/arrowWhite.svg") no-repeat;
+    }
+  }
+}

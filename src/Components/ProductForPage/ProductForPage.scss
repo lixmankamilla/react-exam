@@ -1,0 +1,65 @@
+@import "../../themes/variables/index";
+
+.product-info-wrapper {
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  &__block {
+    display: flex;
+    border: 1px solid #e8e9ea;
+    margin-bottom: 40px;
+    &__img {
+      padding: 40px;
+    }
+    &__desc {
+      border-left: 1px solid #e8e9ea;
+      padding: 24px;
+      &__title {
+        font-family: $primary-font;
+        font-weight: 600;
+        font-size: 34px;
+        color: #171b24;
+        height: 72px;
+        margin-bottom: 100px;
+      }
+      &__price__block {
+        &__sum {
+          font-family: $primary-font;
+          font-weight: 700;
+          font-size: 20px;
+          margin-right: 3px;
+        }
+        &__currency {
+          font-family: $primary-font;
+          font-weight: 700;
+          font-size: 20px;
+        }
+        margin-bottom: 16px;
+      }
+      &__cart__btn {
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 12px 80px;
+        background-color: $primary-color;
+        border: none;
+      }
+    }
+  }
+
+  &__desc {
+    border: 1px solid #e8e9ea;
+    padding: 60px 100px;
+    &__title {
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+    &__text {
+      font-family: $primary-font;
+      font-size: 16px;
+      color: $primary-text-color;
+    }
+  }
+}

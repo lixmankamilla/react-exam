@@ -1,0 +1,74 @@
+@import "../../themes/variables/index";
+
+.site-footer-wrapper {
+  background-color: #2f323a;
+  .site-footer-inner {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 40px 0px;
+    &__contact-block {
+      @include flex(space-between);
+      margin-bottom: 40px;
+      &__mail-block {
+        display: flex;
+        padding: 12px 0px;
+        &__icon {
+          width: 24px;
+          height: 24px;
+          background-image: url("../../assets/mail-icon.svg");
+          background-repeat: no-repeat;
+          margin-right: 8px;
+        }
+        &__text {
+          font-family: $primary-font;
+          font-weight: 500;
+          font-size: 16px;
+          color: #e8e9ea;
+        }
+      }
+
+      &__geo-block {
+        display: flex;
+        padding: 12px 0px;
+        &__icon {
+          width: 24px;
+          height: 24px;
+          background-image: url("../../assets/geolocation-icon.svg");
+          background-repeat: no-repeat;
+          margin-right: 8px;
+        }
+        &__text {
+          font-family: $primary-font;
+          font-weight: 500;
+          font-size: 16px;
+          color: #e8e9ea;
+        }
+      }
+    }
+
+    &__payment-block {
+      border-top: 1px solid #5d6066;
+      padding: 16px 0px 0px 0px;
+      @include flex(space-between);
+      &__company-name {
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 16px;
+        color: #d1d1d3;
+        margin-right: 75px;
+      }
+      &__pay-icon {
+        width: 268px;
+        height: 36px;
+        background-image: url("../../assets/pay-icon.svg");
+        background-repeat: no-repeat;
+      }
+      &__made-in {
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 16px;
+        color: #d1d1d3;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../themes/variables/index";
+
+.categories-block {
+  margin-right: 16px;
+  padding: 10px;
+  &__category {
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: $primary-text-color;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  &__category:hover {
+    color: black;
+    font-weight: 600;
+  }
+  &__category.selected {
+    color: black;
+    font-weight: 600;
+  }
+}
